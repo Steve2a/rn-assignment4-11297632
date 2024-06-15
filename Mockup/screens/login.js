@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, Button, TextInput, TouchableOpacity } from 'react-native'
+import { View, Text, StyleSheet, Button, TextInput, TouchableOpacity, SafeAreaView, Image } from 'react-native'
 import React, { useState } from 'react'
 
 const login = ({ navigation }) => {
@@ -45,13 +45,13 @@ const login = ({ navigation }) => {
         <Text style={styles.continueText}>Or continue with</Text>
         <View style={styles.socials}>
           <View style={styles.social}>
-
+          <Image source={require('../assets/cib_apple.svg')}/>
           </View>
           <View style={styles.social}>
-
+          <Image source={require('../assets/flat-color-icons_google.svg')}/> 
           </View>
           <View style={styles.social}>
-
+          <Image source={require('../assets/ion_logo-facebook.svg')}/>
           </View>
 
         </View>
@@ -72,10 +72,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     gap: '50px',
+    backgroundColor:'#FAFAFD',
+    padding:'20px'
   },
   loginText: {
     alignItems: 'flex-start',
-    alignSelf: 'flex-start'
+    alignSelf: 'flex-start',
+    gap:'15px'
+
 
   },
 
@@ -104,7 +108,8 @@ const styles = StyleSheet.create({
     fontWeight: '500',
   },
   loginView: {
-    flex: 3
+    display:'flex',
+    alignSelf:'center'
 
   },
 
@@ -126,9 +131,49 @@ const styles = StyleSheet.create({
   },
   bottomView:{
     display:'flex',
+    alignItems:'center',
+    justifyContent:'center',
+    gap:'50px'
   },
 
-  socials:{}
+  socials:{
+    display:'flex',
+    flexDirection:'row',
+     gap:'40px'
+
+  },
+  social:{
+    backgroundColor:'#fff',
+    width:'56px',
+    height:'56px',
+    borderRadius:'30px',
+    display:'flex',
+    alignItems:'center',
+    justifyContent:'center'
+   
+
+  },
+  continueText:{
+    fontSize:'13px',
+    fontWeight:'400',
+    color:'#AFB0B6',
+  },
+  account:{
+    display:'flex',
+    flexDirection:'row',
+    gap:'10px'
+
+  },
+  accountText:{
+    fontSize:'14px',
+    color:'#AFB0B6',
+    fontWeight:'400'
+  },
+  register:{
+    fontSize:'14px',
+    color:'#356899',
+    fontWeight:'400'
+  }
 
 })
 
