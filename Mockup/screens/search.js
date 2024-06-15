@@ -49,6 +49,7 @@ searchContainer: {
     justifyContent: 'space-between',
     zIndex: '0',
     marginBottom:'50px',
+    paddingRight:'7px',
 
 },
 
@@ -56,14 +57,14 @@ searchIcon: {
     position: 'relative',
     height: '20px',
     width: '20px',
-    left: '-250px',
+    left: '-253px',
     zIndex: '1',
 
 },
 
 searchInput: {
     height: '48px',
-    width: '263px',
+    width: '270px',
     backgroundColor: '#F2F2F3',
     border: 'none',
     borderRadius: '12px',
