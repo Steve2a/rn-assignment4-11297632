@@ -117,8 +117,8 @@ const styles = StyleSheet.create({
     borderRadius: '25px',
     zIndex: 1,
     border: '2px solid #FAFAFD',
-    left: '122px',
-    top: '-20px'
+    left: '111px',
+    top: '-18px'
 
   },
 
