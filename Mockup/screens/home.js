@@ -20,7 +20,7 @@ const home = ({ route, }) => {
       </View>
 
       <Search />
-      
+
       <View style={styles.titleView}>
         <Text style={styles.title}>Featured Jobs</Text>
         <Text style={styles.seeAll}>See all</Text>

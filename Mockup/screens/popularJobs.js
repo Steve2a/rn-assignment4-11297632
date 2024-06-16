@@ -5,7 +5,7 @@ const PopularJobs = (props) => {
   return (
     <View style={styles.popularCard}>
       <View style={styles.popularView1}>
-        <Image style={styles.popularIcon} source={props.companyLogo}/>
+        <Image style={styles.popularIcon} source={props.companyLogo} />
         <View style={styles.popularText1}>
           <Text style={styles.job}>{props.availablePostion}</Text>
           <Text style={styles.company}>{props.companyName}</Text>
@@ -43,16 +43,16 @@ const styles = StyleSheet.create({
 
   },
 
-  popularView1:{
-    flexDirection:'row',
-    gap:'20px',
+  popularView1: {
+    flexDirection: 'row',
+    gap: '20px',
   },
   popularText1: {
     display: 'flex',
     alignItems: 'flex-start',
     justifyContent: 'space-between',
-    paddingTop:'3px',
-    paddingBottom:'3px'
+    paddingTop: '3px',
+    paddingBottom: '3px'
   },
 
   job: {
@@ -70,8 +70,8 @@ const styles = StyleSheet.create({
     display: 'flex',
     alignItems: 'flex-end',
     justifyContent: 'space-between',
-    paddingTop:'3px',
-    paddingBottom:'3px'
+    paddingTop: '3px',
+    paddingBottom: '3px'
   },
 
   yearSalary: {
